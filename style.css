@@ -1,0 +1,93 @@
+body{
+    background-color: black;
+    color:white;
+}
+
+/* .underlay{
+    position: relative;
+    width:100%;
+    opacity: .5;
+    object-fit: cover;
+    height:95vh;
+} */
+
+section{
+    position:relative;
+    width: 100%;
+    height:95vh;
+    /* opacity: .5; */
+}
+
+section  h2{
+    background-color:green;
+    text-align: center;
+}
+
+#home{
+    background-image: url('images/homeUnderlay.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:black;
+    /* position: relative; */
+    /* width:100%; */
+    /* opacity: .5; */
+    /* object-fit: cover; */
+    /* height:95vh; */
+}
+
+#home h1{
+    padding-top: 40%;
+}
+#about{
+    background-image: url('images/aboutUnderlay.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width:100%;
+    height:100vh; */
+    /* position: relative; */
+    /* width:100%; */
+    /* opacity: .5; */
+    /* object-fit: cover; */
+    /* height:95vh; */
+
+    
+}
+
+#about ol{
+    padding-top:30%;
+}
+
+#contact{
+    background-image: url('images/contactUnderlay.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    /* width:100%; */
+    /* opacity: .5; */
+    /* object-fit: cover; */
+    /* height:95vh; */
+}
+
+#contact .mb-3{
+    padding-top:15%;
+}
+#buy{
+    background-image: url('images/buyCash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color:darkred; */
+    text-align: center;
+    /* padding-top:50%; */
+    /* position: relative; */
+    /* width:100%; */
+    /* opacity: .5; */
+    /* object-fit: cover; */
+    /* height:95vh; */
+}
+
+#buy p{
+    opacity: 100%;
+    font-size:1.5em;
+    padding-top:25%;
+    /* color:black; */
+}

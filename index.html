@@ -7,12 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RealPropertyLiquidators</title>
+    <title>Real Property Liquidators</title>
+    <!-- Create meta information for SEO -->
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">[Company Name Here]</a>
+          <a class="navbar-brand" href="#">Real Property Liquidators</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -30,15 +31,51 @@
             </ul>
           </div>
         </div>
-      </nav>
-      <section id="home">
-          <h2>Home</h2>
-          <h1>Dont Let This Opportunity Pass You By!</h1>
-      </section>
+    </nav>
+  <!-- Adjust background img to cover section completely with no white space -->
+    <section>
+      <div class='home-center'>
+        <div class='center-left'>
+          <h1>We Buy Houses Nationwide</h1>
+          <hr>
+          <h4>SELL YOUR HOUSE WITH GREENLIGHT OFFER!</h4>
+          <P>Who will give you the best cash offer for your house! Find out why we're rated as the #1 housebuyers in the country. Give us a call today or fill out a form.</P>
+          <button>Call us: (813) 856 - 9458</button>
+          <form class="home-contact-form">
+            <label for="fullName">FULL NAME<span class='required'>  *</span></label>
+            <input id='fullName'  type="text" placeholder='EX. JOHN DOE' required='true'>
+            <label for="phoneNumber">PHONE NUMBER<span class='required'>  *</span></label>
+            <input  id='phoneNumber'  type="text" placeholder='EX. (123)-456-7890' required='true'>
+            <label for="propertyAddress">PROPERTY ADDRESS<span class='required'>  *</span></label>
+            <input id= 'propertyAddress' class='form-control' type="text" placeholder='EX. 3 EXAMPLE ST.' required='true'>
+            <br>
+            <button class='btn btn-dark form-control'>GET MY OFFER TODAY!</button>
+          </form>
+        </div>
+        <div class='center-right'>
+          <div class='home-tests'>
+            <h6>THEY ARE THE BEST!</h6>
+            <p>"I had an inherited property that was old and unsafe to live in. Greenlight Offer gave me an offer I couldn't refuse"</p>
+            <p>-Eddia A.</p>
+          </div>
+          <div class='home-tests'>
+            <h6>SOLD MY HOUSE IN 2 WEEKS!</h6>
+            <p>"I needed to sell my house because I had another job offer in New York. Greenlight Offer bought my house INSTANTLY!"</p>
+            <p>-Tamiyah G.</p>
+          </div>
+          <div class='home-tests'>
+            <h6>SOLD MY UNWANTED HOUSE!</h6>
+            <p>"My house was in a bad location so I had a hard time selling it. Greenlight Offer bought my house without any hesitation!"</p>
+            <p>-Franky C.</p>
+          </div>
+        </div>
+      </div>          
+    </section>
       
-
-      <section id="about">
+<!--
+      <section id='about'>        
         <h2>About</h2>
+        <div class='flex-column about'>
         <h3>Having trouble selling your house? My Cash Offer Can Help.</h3>
         <ol>
             <li>We buy as-is meaning you don't have to put a cent more into the property.</li>
@@ -47,34 +84,46 @@
             <li>We buy houses with tenants that may be uncooperative </li>
             <li>Going through Foreclosure, Divorce, Death in the family, Fire or Water damage, Rental property draining you?  Cash Offer can help!</li>
         </ol>
+      </div>
       </section>
 
       <section id="contact">
           <h2>Contact for Cash Offer</h2>
-          <div class="mb-3">
-  
-            <input type="text" class="form-control" id="fname" placeholder="First Name">
-            <input type="text" class="form-control" id="lname" placeholder="Last Name">
-            <input type="email" class="form-control" id="email" placeholder="Email: name@example.com">
-            <input type="phone" class="form-control" id="phone" placeholder="Phone">
-            <input type="phone" class="form-control" id="phone" placeholder="Address">
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control" id="textMessageHere" rows="3" placeholder="Type your message here"></textarea>
-            <button type="button" class="btn btn-success">Submit</button>
+               Grab form data
+               Submit form data to GoDaddy once onSubmit button is pressed          
+          <div class='flex-container contact'>
+            <input type="text"  id="fname" placeholder="First Name">
+           
+            <input type="text"  id="lname" placeholder="Last Name">
+            
+            <input type="email"  id="email" placeholder="Email">
+           
+            <input type="phone"  id="phone" placeholder="Phone">
+            
+            <input type="phone"  id="phone" placeholder="Address">
+           
+            <textarea  id="textMessageHere" rows="3" placeholder="Type your message here"></textarea>
+            
+            <button type="button" class="btn btn-primary">Submit</button>
           </div>
         
       </section>
 
-        <section id="buy">
-            <h1>YOUR PROPERTY SOLD</h1>
-            <p>It simply doesn't get any easier than this.
-                If you are looking to sell your property, I will put cash in your hands.                
-                No commissions, no gimmicks, no hidden fees.            
+        <section id='buy'>
+            <h2>YOUR PROPERTY SOLD</h2>
+            <div class='flex-container buy'>
+              <p>It simply doesn't get any easier than this.
+                 If you are looking to sell your property, I will put cash in your hands.                
+                 No commissions, no gimmicks, no hidden fees.            
                  Your offer is just a click away.
-                The real estate market is really hot right now and you may want to take advantage of it.
-               Let me pay you top dollar for your property right now.</p>
+                 The real estate market is really hot right now and you may want to take advantage of it.
+                 Let me pay you top dollar for your property right now.
+              </p>
+            </div>
         </section>
+-->  
+        
+        <center><footer>Real Property Liquidators &copy 2021</footer></center>
     
       
 

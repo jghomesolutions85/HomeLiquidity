@@ -1,93 +1,198 @@
+html {
+    scroll-behavior: smooth;
+}
+  
 body{
     background-color: black;
-    color:white;
+    color:white;    
 }
 
-/* .underlay{
-    position: relative;
-    width:100%;
-    opacity: .5;
-    object-fit: cover;
-    height:95vh;
-} */
+
 
 section{
     position:relative;
     width: 100%;
-    height:95vh;
-    /* opacity: .5; */
-}
-
-section  h2{
-    background-color:green;
-    text-align: center;
-}
-
-#home{
-    background-image: url('images/homeUnderlay.jpg');
-    background-repeat: no-repeat;
-    background-size:cover;
-    color:black;
-    /* position: relative; */
-    /* width:100%; */
-    /* opacity: .5; */
-    /* object-fit: cover; */
-    /* height:95vh; */
-}
-
-#home h1{
-    padding-top: 40%;
-}
-#about{
-    background-image: url('images/aboutUnderlay.jpg');
-    background-repeat: no-repeat;
+    height:92vh;
+    border:1px dashed white;
+    /* overflow-y: hidden; */
+    background:url('images/homeUnderlay.jpg');
     background-size: cover;
-    /* width:100%;
-    height:100vh; */
-    /* position: relative; */
-    /* width:100%; */
-    /* opacity: .5; */
-    /* object-fit: cover; */
-    /* height:95vh; */
+    background-repeat:no-repeat;
+}
 
+.home-center{
+   
+
+    /* opacity:.5; */
+    display:flex;
+    flex-direction: row;
+    width:70%;
+    height:90vh;
+    margin:1% auto;
+}
+
+.center-left{
+    background-color: rgba(0, 0, 0, .5);
+    border:1px solid green;
+    width:70%;
+    justify-content: center;
+}
+
+
+
+.home-tests{
+    background-color: black;
+    opacity: .5;
+    border:1px dashed orange;
+    padding:15px 25px;
+    /* flex-grow: ; */
+    flex-shrink: 2;
+    /* margin: 1% 25%; */
     
 }
 
-#about ol{
-    padding-top:30%;
+.home-contact-form{
+    display:flex;
+    flex-direction: column;
+    align-items: space-around;
+    flex-wrap: wrap;
+    width:75%;
+    height:40vh;
+    background-color: darkgreen;
+    margin:5% 0;
+    padding:20px;
+    border:5px dotted white;
+    /* position:relative; */
+
 }
 
-#contact{
+/* .home-contact-form:after{
+    content:"";
+    position:absolute;
+    background-color: darkgreen;
+
+}
+ */
+.home-contact-form input:nth-child(1), .home-contact-form input:nth-child(2){
+    /* margin:5px; */
+    /* flex-wrap: 1; */
+    flex-shrink: 1;
+    /* background-color:grey; */
+ 
+}
+
+
+.required{
+    color:red;
+}
+
+
+.center-right{
+    background-color: rgba(0, 0, 0, .5);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:25%;
+    margin-left:2%;
+    border:1px solid red;
+  
+}
+/* section  h2{
+    background-color:green;
+    text-align: center;    
+}
+
+section .flex-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;  
+}
+
+.flex-container input{
+    flex-grow: 8;
+}
+
+
+
+
+
+
+.home::before, .about::before, .contact::before, .buy::before{
+    content:'';
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity:.3;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.home::before{
+    background-image: url('images/homeUnderlayMobile.jpg');
+}
+
+
+
+
+.about::before{
+    background-image: url('images/aboutUnderlay.jpg');
+
+}
+
+
+.contact::before{
     background-image: url('images/contactUnderlay.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* position: relative; */
-    /* width:100%; */
-    /* opacity: .5; */
-    /* object-fit: cover; */
-    /* height:95vh; */
+
 }
 
-#contact .mb-3{
-    padding-top:15%;
-}
-#buy{
+
+
+
+.buy::before{
     background-image: url('images/buyCash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* color:darkred; */
-    text-align: center;
-    /* padding-top:50%; */
-    /* position: relative; */
-    /* width:100%; */
-    /* opacity: .5; */
-    /* object-fit: cover; */
-    /* height:95vh; */
+
 }
 
-#buy p{
-    opacity: 100%;
+.buy p{
+    padding-top: 15%;
+    text-align: center;
     font-size:1.5em;
-    padding-top:25%;
-    /* color:black; */
+    color:white;
+
+
+}
+ */
+
+/*Create Desktop Layout */
+@media only screen and (min-width: 1081px) {
+
+/* 
+    .home::before{
+        content:'';
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background-image: url('images/homeUnderlay.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
+        opacity:.5;
+    }
+
+    /*Temporary for Vertical Center on Screen
+    .home h1{
+        padding-top: 20%;
+        text-align: center;
+    }
+
+    .about{
+
+    } */
+ 
+    
+    
 }

@@ -13,6 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
+          <img class="navbar-brand" src='images/Logo1.png'>
           <a class="navbar-brand" href="#">Real Property Liquidators</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,61 +33,187 @@
           </div>
         </div>
     </nav>
-  <!-- Adjust background img to cover section completely with no white space -->
-    <section>
+
+    <section id="home">
       <div class='home-center'>
         <div class='center-left'>
           <h1>We Buy Houses Nationwide</h1>
           <hr>
           <h4>SELL YOUR HOUSE WITH GREENLIGHT OFFER!</h4>
           <P>Who will give you the best cash offer for your house! Find out why we're rated as the #1 housebuyers in the country. Give us a call today or fill out a form.</P>
-          <button>Call us: (813) 856 - 9458</button>
+          <button class="btn btn-success">CALL US: (813) 856 - 9458</button>
           <form class="home-contact-form">
             <label for="fullName">FULL NAME<span class='required'>  *</span></label>
-            <input id='fullName'  type="text" placeholder='EX. JOHN DOE' required='true'>
-            <label for="phoneNumber">PHONE NUMBER<span class='required'>  *</span></label>
-            <input  id='phoneNumber'  type="text" placeholder='EX. (123)-456-7890' required='true'>
-            <label for="propertyAddress">PROPERTY ADDRESS<span class='required'>  *</span></label>
+            <br>
+            <input id='fullName'  type="text" placeholder='EX. JOHN DOE' required='true'><br>
+            <label for="phoneNumber">PHONE NUMBER<span class='required'>  *</span></label><br>
+            <input  id='phoneNumber'  type="text" placeholder='EX. (123)-456-7890' required='true'><br>
+            <label for="propertyAddress">PROPERTY ADDRESS<span class='required'>  *</span></label><br>
             <input id= 'propertyAddress' class='form-control' type="text" placeholder='EX. 3 EXAMPLE ST.' required='true'>
             <br>
-            <button class='btn btn-dark form-control'>GET MY OFFER TODAY!</button>
+            <button class='btn btn-dark form-control'>GET OUR OFFER TODAY!</button>
           </form>
         </div>
         <div class='center-right'>
-          <div class='home-tests'>
-            <h6>THEY ARE THE BEST!</h6>
-            <p>"I had an inherited property that was old and unsafe to live in. Greenlight Offer gave me an offer I couldn't refuse"</p>
-            <p>-Eddia A.</p>
-          </div>
-          <div class='home-tests'>
-            <h6>SOLD MY HOUSE IN 2 WEEKS!</h6>
-            <p>"I needed to sell my house because I had another job offer in New York. Greenlight Offer bought my house INSTANTLY!"</p>
-            <p>-Tamiyah G.</p>
-          </div>
-          <div class='home-tests'>
-            <h6>SOLD MY UNWANTED HOUSE!</h6>
-            <p>"My house was in a bad location so I had a hard time selling it. Greenlight Offer bought my house without any hesitation!"</p>
-            <p>-Franky C.</p>
+          <div class="test-wrapper">
+            <div class='home-tests'>
+              <h6>THEY ARE THE BEST!</h6>
+              <p>"I had an inherited property that was old and unsafe to live in. Greenlight Offer gave me an offer I couldn't refuse"</p>
+              <p>-Eddia A.</p>
+            </div>
+            <div class='home-tests'>
+              <h6>SOLD MY HOUSE IN 2 WEEKS!</h6>
+              <p>"I needed to sell my house because I had another job offer in New York. Greenlight Offer bought my house INSTANTLY!"</p>
+              <p>-Tamiyah G.</p>
+            </div>
+            <div class='home-tests'>
+              <h6>SOLD MY UNWANTED HOUSE!</h6>
+              <p>"My house was in a bad location so I had a hard time selling it. Greenlight Offer bought my house without any hesitation!"</p>
+              <p>-Franky C.</p>
+            </div>
           </div>
         </div>
       </div>          
     </section>
       
-<!--
-      <section id='about'>        
-        <h2>About</h2>
-        <div class='flex-column about'>
-        <h3>Having trouble selling your house? My Cash Offer Can Help.</h3>
-        <ol>
-            <li>We buy as-is meaning you don't have to put a cent more into the property.</li>
-            <li>We close deals fast within 30 days</li>
-            <li>We give you a fair all cash offer within 24 hours</li>
-            <li>We buy houses with tenants that may be uncooperative </li>
-            <li>Going through Foreclosure, Divorce, Death in the family, Fire or Water damage, Rental property draining you?  Cash Offer can help!</li>
-        </ol>
-      </div>
-      </section>
 
+    <section id='about'>
+      <div class="about-center">
+        <div class="center-left">
+          <h2>About Us</h2>          
+          <hr>  
+          <p>
+            Real Property Liquidators is a sister company of JG Home Solutions, LLC, a family owned business. Our company has built a team consisting of a Certified Carpenter, a Title Agent, a Real Estate Agent, a Wholesaler and a Property Manager. Native New Yorkers, our Family began migrating south to Florida in the early 90’s. Together we provide a quality service, buying homes with cash and investing back into the community, which is guaranteed to help anyone in any situation because we understand.
+          </p>
+          <button class="btn btn-success">CALL US: (813) 856 - 9458</button>
+        </div>
+
+        <div class="center-right">
+          <img src="images/aboutRightSide.jpg">
+        </div>
+    </div>  
+    <div class="as-is-wrapper">
+        <h5>HOUSES WE BUY</h5>
+        <h2>We Buy As-Is Condition!</h2>
+        <hr>
+      <div class="as-is">
+        <div>
+          <div class="as-is-conditions">
+            <h5>Bad Area</h5>
+            <hr>
+            <p>Houses that are in a bad or unsafe area that are hard to sell or list on the market.</p>
+          </div>
+          <div class="as-is-conditions">
+            <h5>Fire Damage</h5>
+            <hr>
+            <p>Houses that are damaged by a fire and the owner cannot afford to pay for the repair costs.</p>
+          </div>
+          <div class="as-is-conditions">
+            <h5>Bankruptcy</h5>
+            <hr>
+            <p>Houses where the owner has gone bankrupt or in the process of, and they need to sell.</p>
+          </div>       
+        </div>
+        <div>
+          
+          <div class="as-is-conditions">
+            <h5>Liens</h5>
+            <hr>
+            <p>Houses that have liens against it and is seized by the government so the owner's need to sell.</p>
+          </div>
+          <div class="as-is-conditions">
+            <h5>Medical Issues</h5>
+            <hr>
+            <p>Houses where the owner or their family members have a medical issue and they need cash.</p>
+          </div>
+          <div class="as-is-conditions">
+            <h5>Liquidation</h5>
+            <hr>
+            <p>Houses where they are in the process of being liquidated and the owners need to sell.</p>
+          </div>
+        </div>       
+      </div>
+    </div>
+      
+
+    </section>
+
+
+    <section id="callToAction">
+      <div class="c2a-center">
+        <h1>We Buy Houses in Florida</h1>
+          <p>Real Property Liquidators has been purchasing real estate since [DATE. Our "3-Step Home Buying Process" makes it easy to move on from property for a fair price. Selling your house fast in Florida just doesn't get any easier.</p>
+          <p>Here's how it works...</p>
+          <div class="c2a-steps-wrapper">
+            <div class="c2a-steps">
+              [Icon] 
+              <h3>Step One - Contact Us</h3>
+              <p>Call us at  (813) 856 - 9458 or fill in our  <a href='#cashOffer'>Get Cash Offer Form</a>. Our team will gather some information about the address and property information condition to make our "highes and best offer". We look forward to hearing from you.</p>
+            </div>
+            <div class="c2a-steps">
+              [Icon] 
+              <h3>Step Two - Get A Fair Cash Offer</h3>
+              <p>We make you a fair cash offer. Free and no obligation. Honest "as-is" offers based on local comps. Never contingent on mortgages. Our own cash. No banks necessary.</p>
+            </div>
+            <div class="c2a-steps">
+              [Icon] 
+              <h3>Step Three - Close In Your Timeframe </h3>
+              <p>Get paid in days, not months. You pick the closing date! Effortless and hassle free process. No realtor commision, no repairs, no open houses, no yard signs.</p>
+            </div>
+          </div>
+          <p>House sales with an agent are never this easy.</p>
+          <p>Agents ask you to sign a "listing agreement" granting the exclusive right to sell your home. You pay up to 6% commision - even if you find the buyer or the agent does'nt deliver the promised price. Selling to us is fast, easy, and ou save on repairs and agent fees.</p>
+          <p>Deciding how do I sell my house in Florida? Here are the differences between selling to Real Property Liquidators verses the "traditional" route with a public MLS listing:</p>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th><b>SOLD to Real Property Liquidators</b></th>
+                <th><b>Selling with an Agent</b></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Commissions / Fees:</b></td>
+                <td>NONE</td>
+                <td>6% on average is paid by you, the seller</td>
+              </tr>
+              <tr>
+                <td><b>Who Pays Closing Costs?:</b></td>
+                <td>NONE - We pay all costs</td>
+                <td>2% on average is paid by you, the seller</td>
+              </tr>
+              <tr>
+                <td><b>Mortgage Financing:</b></td>
+                <td>NONE - <u>We make cash offers</u></td>
+                <td><u>Yes,</u> sale often subject to lender approval</td>
+              </tr>
+              <tr>
+                <td><b>Appraisal Needed:</b></td>
+                <td>NONE</td>
+                <td><u>Yes,</u> sale often subject to appraisal</td>
+              </tr>
+              <tr>
+                <td><b>Showings or Open House:</b></td>
+                <td>NONE</td>
+                <td>Daily/Weekly</td>
+              </tr>
+              <tr>
+                <td><b>Closing Date:</b></td>
+                <td>Date of YOUR CHOICE</td>
+                <td>30-60 +/- days after accepting buyers offer</td>
+              </tr>
+              <tr>
+                <td><b>Who Pays for Repairs?:</b></td>
+                <td>NONE - We pau for all repairs</td>
+                <td>Negotiated prior to closing</td>
+              </tr>
+
+            </tbody>
+          </table>
+      </div>
+    </section>
+<!--
       <section id="contact">
           <h2>Contact for Cash Offer</h2>
                Grab form data
@@ -123,7 +250,37 @@
         </section>
 -->  
         
-        <center><footer>Real Property Liquidators &copy 2021</footer></center>
+        <footer class='footer-info'>
+          <div class="footer-wrapper">
+
+            <div class="quick-links">
+              <h5>QUICK LINKS</h5>
+              <hr>
+              <ul>
+                <li><a href='#home'>Home</a></li>
+                <li><a href='#about'>About</a></li>
+                <li><a href='#contact'>Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="contact-info">
+              <h5>CONTACT INFORMATION</h5>
+              <hr>
+              <ul>
+                <li><span>[icon]</span> (813) 856-9458</li>
+                <li><span>[icon]</span> Jordan@RealProperyLiquidators.com</li>
+                <li><span>[icon]</span> JG Home Solutions LLC Address</li>
+              </ul>  
+              
+            </div>
+            <div><img src="images/Logo.png"></div>  
+          </div>
+          
+            
+          
+
+          <p>Copyright &copy Real Property Liquidators. All Rights Reserved | <a href='#'>View Our Privacy Policy</a> | Designed by SHaDoWCoDe64</p>
+        </footer>
     
       
 

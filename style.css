@@ -3,82 +3,57 @@ html {
 }
   
 body{
-    background-color: black;
+    background-color: whitesmoke;
     color:white;    
 }
 
+/* ============================================================ */
+    /* HOME SECTION */
 
 
-section{
-    position:relative;
+#home, #about, #callToAction, #guarantees, #testimonials{
     width: 100%;
-    height:92vh;
-    border:1px dashed white;
-    /* overflow-y: hidden; */
-    background:url('images/homeUnderlay.jpg');
-    background-size: cover;
-    background-repeat:no-repeat;
+    height:auto;
+    border:2px inset rgba(255, 255, 255, .3);
+    position:relative;
 }
 
-.home-center{
-   
+#home::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:url('images/homeUnderlayTest.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    opacity:.7;
+    z-index:-1
+}
 
-    /* opacity:.5; */
+.home-center, .about-center{
     display:flex;
     flex-direction: row;
     width:70%;
-    height:90vh;
-    margin:1% auto;
+    margin:10% auto;
 }
 
 .center-left{
-    background-color: rgba(0, 0, 0, .5);
-    border:1px solid green;
-    width:70%;
-    justify-content: center;
-}
+    width:90%;
+    /* border:1px solid green; */
 
 
-
-.home-tests{
-    background-color: black;
-    opacity: .5;
-    border:1px dashed orange;
-    padding:15px 25px;
-    /* flex-grow: ; */
-    flex-shrink: 2;
-    /* margin: 1% 25%; */
-    
 }
 
 .home-contact-form{
-    display:flex;
-    flex-direction: column;
-    align-items: space-around;
-    flex-wrap: wrap;
-    width:75%;
-    height:40vh;
-    background-color: darkgreen;
-    margin:5% 0;
+    width:98%;
+    max-width: 98%;
+    min-width: 50%;
+    background-color: rgba(9, 85, 116,.8);
+    margin:7% 0;
     padding:20px;
-    border:5px dotted white;
-    /* position:relative; */
-
-}
-
-/* .home-contact-form:after{
-    content:"";
-    position:absolute;
-    background-color: darkgreen;
-
-}
- */
-.home-contact-form input:nth-child(1), .home-contact-form input:nth-child(2){
-    /* margin:5px; */
-    /* flex-wrap: 1; */
-    flex-shrink: 1;
-    /* background-color:grey; */
- 
+    /* border:5px dotted white; */
 }
 
 
@@ -87,112 +62,169 @@ section{
 }
 
 
+
 .center-right{
-    background-color: rgba(0, 0, 0, .5);
+    height:auto;
+    min-width:40%;
+
+}
+
+.test-wrapper{
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
-    width:25%;
-    margin-left:2%;
-    border:1px solid red;
-  
-}
-/* section  h2{
-    background-color:green;
-    text-align: center;    
-}
-
-section .flex-container{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;  
-}
-
-.flex-container input{
-    flex-grow: 8;
-}
-
-
-
-
-
-
-.home::before, .about::before, .contact::before, .buy::before{
-    content:'';
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    opacity:.3;
-    z-index: -1;
-    background-repeat: no-repeat;
-    background-size:cover;
-}
-
-.home::before{
-    background-image: url('images/homeUnderlayMobile.jpg');
-}
-
-
-
-
-.about::before{
-    background-image: url('images/aboutUnderlay.jpg');
-
-}
-
-
-.contact::before{
-    background-image: url('images/contactUnderlay.jpg');
-
-}
-
-
-
-
-.buy::before{
-    background-image: url('images/buyCash.jpg');
-
-}
-
-.buy p{
-    padding-top: 15%;
-    text-align: center;
-    font-size:1.5em;
-    color:white;
+    justify-content: space-evenly;
+    padding:50px
 
 
 }
- */
 
-/*Create Desktop Layout */
-@media only screen and (min-width: 1081px) {
+.home-tests{
+    background-color: rgba(0, 0, 0, .8);
+    /* border:1px dashed orange; */
+    margin: 1% auto;
+    padding:15px;
+    flex-shrink: 2;
+    border-radius:10px;
 
-/* 
-    .home::before{
-        content:'';
-        position:absolute;
-        top:0;
-        bottom:0;
-        left:0;
-        right:0;
-        background-image: url('images/homeUnderlay.jpg');
-        background-repeat: no-repeat;
-        background-size:cover;
-        opacity:.5;
+
+}
+
+/* ============================================================ */
+    /* ABOUT SECTION */
+
+    .about-center{
+        color:black;
     }
 
-    /*Temporary for Vertical Center on Screen
-    .home h1{
-        padding-top: 20%;
+    .about-center .center-right img{
+        width: 75%;
+        height:70%;
+        margin:5%;
+        
+    }
+
+    .as-is-wrapper{
+        text-align: center;
+        position:relative;
+    }
+
+    .as-is-wrapper::before{
+        content:'';
+        background-image: url('images/as-IsBackground.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        opacity:.7;
+        z-index:-1;
+    }
+
+    .as-is{
+       /* display:flex;
+       justify-content: space-evenly;
+       align-items:stretch;
+       flex-wrap: wrap; */
+    }
+
+    .as-is-conditions{
+        display:inline-block;
+        width:20%;
+        margin:3%;
+        color:black;
+        border: 1px solid silver;
+        padding:1%;
+        background:whitesmoke;
+
+    }
+
+/* ============================================================ */
+    /* CALL TO ACTION SECTION */
+
+    .c2a-center{
+        width:70%;
+        margin:10% auto;
+        color:black;
+        
+    }
+
+    .c2a-center h1{
         text-align: center;
     }
 
-    .about{
+    .c2a-steps-wrapper{
+        display:flex;
+        justify-content: space-around;
+    }
 
-    } */
- 
-    
-    
+    .c2a-steps{
+        background-color:rgba(16, 108, 184, .8);
+        border:1px solid silver;
+        width:30%;
+        padding:3%;
+    }
+
+    .c2a-steps a{
+        color: white;
+    }
+
+    .c2a-steps a:hover{
+        color:red;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 2% auto;
+      }
+      
+      td, th {
+        border: 1px solid #999;
+        padding: 0.5rem;
+        text-align: left;
+      }
+
+
+/* ============================================================ */
+    /* FOOTER SECTION */
+
+footer{
+    background-color: black;
 }
+.footer-info p{
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer-info a:hover{
+    color:red;
+}
+
+.footer-info a, a:visited{
+    color:white;
+}
+
+.footer-wrapper{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.footer-wrapper div{
+    margin:5%;
+    /* width:33%; */
+}
+
+.footer-wrapper .contact-info ul{
+    list-style: none;
+}
+
+/* ============================================================ */
+
+
+
+
+
+
+
+

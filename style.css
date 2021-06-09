@@ -50,7 +50,7 @@ body{
     width:98%;
     max-width: 98%;
     min-width: 50%;
-    background-color: rgba(9, 85, 116,.8);
+    background-color: rgba(16, 108, 184, .8);
     margin:7% 0;
     padding:20px;
     /* border:5px dotted white; */
@@ -154,7 +154,7 @@ body{
         text-align: center;
     }
 
-    .c2a-steps-wrapper{
+    .c2a-steps-wrapper, .guarantee-wrapper{
         display:flex;
         justify-content: space-around;
     }
@@ -179,11 +179,26 @@ body{
         margin: 2% auto;
       }
       
-      td, th {
-        border: 1px solid #999;
-        padding: 0.5rem;
-        text-align: left;
-      }
+    td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: left;
+    }
+
+/* ============================================================ */
+    /* CONTACT SECTION */
+
+    .contact-center{
+        width:30%;
+        margin:5% auto;
+        color:black;
+        border:3px inset black;
+        padding:5%;
+    }
+
+    .contact-wrapper form {
+        max-width: 220px;
+    }
 
 
 /* ============================================================ */

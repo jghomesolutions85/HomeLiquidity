@@ -190,9 +190,10 @@ body{
 
     .contact-center{
         width:30%;
+        min-width: 880px;
         margin:5% auto;
         color:black;
-        border:3px inset black;
+        border:3px inset silver;
         padding:5%;
     }
 

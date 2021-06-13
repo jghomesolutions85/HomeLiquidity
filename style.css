@@ -122,12 +122,7 @@ body{
         z-index:-1;
     }
 
-    .as-is{
-       /* display:flex;
-       justify-content: space-evenly;
-       align-items:stretch;
-       flex-wrap: wrap; */
-    }
+
 
     .as-is-conditions{
         display:inline-block;
@@ -189,16 +184,20 @@ body{
     /* CONTACT SECTION */
 
     .contact-center{
-        width:60%;
-        min-width: 880px;
-        margin:5% auto;
+        width:50%;
+        margin:10% auto;
         color:black;
-        border:3px inset silver;
-        padding:5%;
+        border:2px outset black;
+        padding:5% 2%;
     }
 
-    .contact-wrapper form {
-        max-width: 220px;
+    .contact-center form input{
+        margin:2px .5px;
+    }
+
+    .contact-center form button{
+        margin:5px .5px;
+  
     }
 
 
@@ -210,7 +209,7 @@ footer{
 }
 .footer-info p{
     text-align: center;
-    font-size: 12px;
+    font-size: 1em;
 }
 
 .footer-info a:hover{
@@ -228,6 +227,7 @@ footer{
 
 .footer-wrapper div{
     margin:5%;
+    width:20%;
     /* width:33%; */
 }
 
@@ -238,6 +238,184 @@ footer{
 /* ============================================================ */
 
 
+
+/* ============================================================ */
+/*MEDIA QUERIES SECTION */
+/* ============================================================ */
+
+
+@media (max-width: 415px) {
+    /* ============================================================ */
+    /*HOME SECTION */
+    .home-center{
+        display:block;
+        width:98%;
+        margin:0 auto;
+        text-align: center;
+    }
+
+    #home::before{
+        background:url("./images/homeUnderlayMobile.jpg.png")
+    
+    }
+
+    .test-wrapper{
+        display: block;
+    }
+
+    .test-wrapper .home-tests{
+        height: auto;
+        font-size: .6em;
+        padding:15px;
+    }
+
+
+
+    /* ============================================================ */
+    /*ABOUT SECTION */
+
+    .about-center{
+        display:block;
+        width:98%;
+        margin:0 auto;
+        text-align: center;
+    }
+
+    #about .about-center h2{
+        display: inline-block;
+    }
+
+    .center-right{
+        text-align: center;
+    }
+
+    .center-left{
+        margin-right:0;
+    }
+
+    .center-left button{
+        margin:15px auto;
+    }
+        
+    .center-right img{
+        width: 98%;
+        display:block;
+        height:25%;
+        margin:0;
+
+        
+    }
+
+    .as-is-wrapper{
+        margin:0;
+        padding:0;
+    }
+
+    .as-is div{
+        display:block;
+        width:95%;
+        margin:5px auto;
+        border-radius: 25px;;
+    }
+
+    /* ============================================================ */
+    /*CALL TO ACTION SECTION */
+
+    #callToAction{
+        margin:0;
+        padding:0;
+        background-image: linear-gradient(0deg,black,  rgba(  16, 108, 184, .8), black);
+
+    }
+
+    .c2a-center{
+        width:98%;
+        margin:0 auto;
+        color:white;
+
+    }
+
+    .c2a-center table{
+       width:25%;
+    }
+
+    /* .c2a-center table{
+        width:98%;
+    } */
+
+    #callToAction{
+        display: block;
+    }
+
+    /* .c2a-center{
+
+        width:98%;
+        margin:0 auto;
+        text-align: center;
+    } */
+
+    .c2a-steps-wrapper, .c2a-steps{
+        display:block;
+        width:100%;
+        height:30%;
+        font-size: .85em;
+        margin:5px;
+        border-radius:25px;
+
+    }
+
+    .c2a-steps{
+        margin-right:0;
+        opacity: .8;
+    }
+
+        /* ============================================================ */
+    /*GUARANTEE SECTION */
+
+
+    
+    
+    /* ============================================================ */
+    /*CONTACT SECTION */
+
+    .contact-center{
+        width:95%;
+    }
+
+    /* ============================================================ */
+    /* FOOTER SECTION */
+
+    footer h5{
+        font-size: 1.75em;
+    }
+
+    .footer-wrapper{
+        /* display:inline-block; */
+        /* flex-direction: row; */
+        height:auto;
+        font-size: .75em;
+    }
+
+    .contact-info{
+        margin:0 0 0 0;
+
+    }
+
+    .contact-info ul{
+        padding: 0;
+    }
+    
+
+    .scroll-to-top img{
+        width: 110px;
+    }
+
+    .footer-info p{
+        font-size: .65em;
+    }
+
+
+  }
 
 
 

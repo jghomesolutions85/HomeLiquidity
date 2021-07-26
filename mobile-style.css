@@ -1,0 +1,225 @@
+/* ============================================================ */
+/*MOBILE VERSION */
+/* ============================================================ */
+
+
+/* @media (max-width: 415px) { */
+    @media (max-width: 991px) {
+
+    section {
+        margin: 0;
+    }
+    /* ============================================================ */
+    /*HOME SECTION */
+    #home::before{
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background:url("./images/homeUnderlayMobile.jpg.png");
+        background-size: cover;
+    
+    }
+
+    .home-center{
+        display:block;
+        width:100%;
+        margin:0;
+        text-align: center;
+    }
+
+    .center-left, .center-right{
+        display: inline-block;
+        width:90%;
+        margin:0 auto;
+        
+    }
+    .home-contact-form{
+        display:block;
+        width:75%;
+        margin:0 auto;
+        padding:0;
+    }   
+
+
+
+    .test-wrapper{
+        display: block;
+    }
+
+    .test-wrapper .home-tests{
+        height: auto;
+        font-size: .6em;
+        padding:15px;
+    }
+
+    /* ============================================================ */
+    /*ABOUT SECTION */
+
+    .about-center{
+        display:block;
+        width:100%;
+        margin:0 auto;
+        
+    }
+
+    #about h2{
+        display: inline-block;
+    }
+
+
+
+    #about .center-right {
+        display:block;
+        width:90%;
+        margin:0 auto;
+
+    }
+
+    #about .center-right img{
+        margin:0;
+        width:100%;
+    }
+
+    #about .center-left{
+        display:block;
+        width:90%;
+        margin:0 auto;
+        text-align: justify;
+    }
+
+    #about .center-left button{
+        display:block;
+        margin:15px auto;
+    }
+        
+
+
+    .as-is-wrapper{
+        margin:0;
+        padding:0;
+    }
+
+    .as-is div{
+        display:block;
+        width:95%;
+        margin:5px auto;
+        border-radius: 25px;;
+    }
+
+    /* ============================================================ */
+    /*CALL TO ACTION SECTION */
+
+    #c2a{
+        margin:0;
+        padding:0;
+        background-image: linear-gradient(0deg,black,  rgba(  16, 108, 184, .8), black);
+
+    }
+
+    .c2a-center{
+        width:90%;
+        margin:0 auto;
+        color:white;
+
+    }
+
+    .c2a-center table{
+       width:25%;
+    }
+
+
+    .c2a-steps-wrapper{
+        display:block;
+        width:90%;
+        font-size: .85em;
+        margin:0 auto;
+        border-radius:25px;
+
+    }
+
+    .c2a-steps{
+        display:block;
+        width:95%;
+        margin:5px auto;
+        opacity: .8;
+        background-color: rgba(255, 255, 255, .7);
+        border-radius:25px;
+        color:black;
+   
+
+    }
+
+    .c2a-steps h3{
+        font-size:medium;
+    }
+    .c2a-center p{
+        text-align: justify;
+    }
+
+    .c2a-center table{
+        display:block;
+        width:100%;
+        margin:0;
+    }
+
+        /* ============================================================ */
+    /*GUARANTEE SECTION */
+
+    .guarantee-wrapper{
+        display:block;
+        text-align: left;
+    }
+
+    .guarantee-left{
+        display: block;
+    }
+
+    .guarantee-right{
+        display: block;
+    }
+    
+    
+    /* ============================================================ */
+    /*CONTACT SECTION */
+
+    .contact-center{
+        width:90%;
+    }
+
+    /* ============================================================ */
+    /* FOOTER SECTION */
+
+    footer h5{
+        font-size: 1.75em;
+    }
+
+    .footer-wrapper{
+        /* display:inline-block; */
+        /* flex-direction: row; */
+        width:100%;
+        height:auto;
+        font-size: .75em;
+    }
+
+    .contact-info{
+        margin:0 0 0 0;
+
+    }
+
+    .contact-info ul{
+        padding: 0;
+    }
+    
+
+    .footer-wrapper img{
+        width: 110px;
+    }
+
+    .footer-info p{
+        font-size: .65em;
+    }
+
+  
+
+}

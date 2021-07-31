@@ -22,24 +22,29 @@
     }
 
     .home-center{
-        display:block;
+        /* display:block; */
+        flex-direction: column;
         width:100%;
         margin:0;
         text-align: center;
     }
 
     .center-left, .center-right{
-        display: inline-block;
-        width:90%;
-        margin:0 auto;
-        
+        margin:0 auto;        
     }
-    .home-contact-form{
+
+
+
+    .center-right{
+        order:1;
+    }
+    /* .home-contact-form{
         display:block;
         width:75%;
         margin:0 auto;
         padding:0;
-    }   
+        order:1;
+    }    */
 
 
 
@@ -76,6 +81,10 @@
 
     }
 
+    #about .about-center .center-right h2{
+        text-align: center;
+    }
+
     #about .center-right img{
         margin:0;
         width:100%;
@@ -92,12 +101,21 @@
         display:block;
         margin:15px auto;
     }
+
+    .home-contact-form #message{
+        max-width:275px;
+        max-height: 250px;;
+    }
         
 
 
     .as-is-wrapper{
         margin:0;
         padding:0;
+    }
+
+    .as-is-wrapper h1{
+        padding:5%;
     }
 
     .as-is div{
@@ -113,14 +131,18 @@
     #c2a{
         margin:0;
         padding:0;
-        background-image: linear-gradient(0deg,black,  rgba(  16, 108, 184, .8), black);
+        /* background-image: linear-gradient(0deg,black,  rgba(  16, 108, 184, .8), black); */
 
+    }
+
+    #c2a h1{
+        padding:5% 0 3% 0;
     }
 
     .c2a-center{
         width:90%;
         margin:0 auto;
-        color:white;
+        color:black;
 
     }
 
@@ -146,8 +168,18 @@
         background-color: rgba(255, 255, 255, .7);
         border-radius:25px;
         color:black;
-   
+        font-weight: normal;
+    }
 
+    .c2a-steps a{
+        color:darkblue;
+    }
+    .c2a-steps a:visited{
+        color: red;
+    }
+
+    .c2a-steps a:hover{
+        color:darkgreen;
     }
 
     .c2a-steps h3{
@@ -166,6 +198,14 @@
         /* ============================================================ */
     /*GUARANTEE SECTION */
 
+    #guarantee-section{
+        border:none;
+    }
+
+    #guarantee-section h1{
+        padding: 3%;
+    }
+
     .guarantee-wrapper{
         display:block;
         text-align: left;
@@ -178,13 +218,32 @@
     .guarantee-right{
         display: block;
     }
+
+    .guarantee{
+        padding:5%;
+    }
+
+    .guarantee p{
+        margin:0;
+    }
     
     
     /* ============================================================ */
     /*CONTACT SECTION */
 
+    #contact{
+        border:none;
+    }
+
     .contact-center{
         width:90%;
+    }
+
+    .contact-wrapper{
+        padding:5%;
+        border:3px inset whitesmoke;
+        background-color: rgba(0, 0, 0, .3);
+        
     }
 
     /* ============================================================ */

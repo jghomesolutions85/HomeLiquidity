@@ -7,16 +7,15 @@ body{
     color:white;    
 }
 
-/* ============================================================ */
-    /* HOME SECTION */
-
-
 #home, #about, #c2a, #guarantees, #testimonials{
     width: 100%;
     height:auto;
     border:2px inset rgba(255, 255, 255, .3);
     position:relative;
 }
+
+/* ============================================================ */
+    /* HOME SECTION */
 
 #home::before{
     content:'';
@@ -39,6 +38,8 @@ body{
     margin:10% auto;
 }
 
+
+
 .center-left{
     width:90%;
     /* border:1px solid green; */
@@ -47,12 +48,13 @@ body{
 }
 
 .home-contact-form{
+    /* align-self: center;
     width:98%;
     max-width: 98%;
-    min-width: 50%;
+    min-width: 50%; */
     background-color: rgba(16, 108, 184, .8);
-    margin:7% 0;
-    padding:20px;
+    /* margin:7% 0;*/
+    padding:5%; 
     /* border:5px dotted white; */
 }
 
@@ -85,6 +87,7 @@ body{
     padding:15px;
     flex-shrink: 2;
     border-radius:10px;
+    border-bottom-left-radius: 0;
 
 
 }
@@ -123,17 +126,26 @@ body{
         z-index:-1;
     }
 
+    .as-is{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
 
 
     .as-is-conditions{
-        display:inline-block;
+
         width:20%;
         margin:3%;
         color:black;
         border: 3px inset silver;
         padding:1%;
         background:black;
-        color:white
+        color:white;
+
+   
 
     }
 
@@ -199,8 +211,8 @@ body{
         text-align: center;
     }
 
-    .guarantee-wrapper{
-
+    .guarantee{
+        padding:5%;
     }
 
 /* ============================================================ */
@@ -215,26 +227,34 @@ body{
         padding:10%;
         color:black;
         /* border:2px outset black; */
-        padding:5% 2%;
+        padding:5% 2%;        
+        border:3px inset whitesmoke;
+        background-color: rgba(0, 0, 0, .3);
     }
 
-    .contact-center h2{
+    .contact-center h1{
         color:white;
         text-align: center;
+
     }
 
-    .contact-center form input{
+    /* .contact-center form input{
         margin:2px .5px;
-    }
+    } */
 
-    .contact-center form button{
+    /* .contact-center form button{
         margin:5px .5px;
   
+    } */
+
+    .contact-wrapper{
+        /* padding:5%; */
+        /* border:3px inset whitesmoke;
+        background-color: rgba(0, 0, 0, .3); */
+        
     }
 
-    .contact-wrapper form{
-        background-color: whitesmoke;
-    }
+
 
 
 /* ============================================================ */
@@ -272,19 +292,3 @@ footer{
 }
 
 /* ============================================================ */
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-

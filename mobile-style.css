@@ -42,6 +42,7 @@
     .test-wrapper{
         min-width: none;
         width:90%;
+        display: hidden; /*==================HIDES TESTIMONIALS ON MOBILE============================= */
     }
 
     .test-wrapper .home-tests{
@@ -51,9 +52,19 @@
 
     }
 
-    .home-contact-form{
-        max-width: 100%;
+    #home-contact-form{
+        /* max-width: 100%; */
         width:100%;
+    }
+
+    /* textarea{
+        width: 100%;
+        margin:0;
+    } */
+
+    #contact-form{
+        width:70%;
+        margin:0 auto;
     }
 
     /* ============================================================ */
@@ -163,7 +174,8 @@
         width:95%;
         margin:5px auto;
         opacity: .8;
-        background-color:rgba(16, 108, 184, .8);
+        /* background-color:rgba(16, 108, 184, .8); */
+        background-color: black;
         border-radius:25px;
         color:white;
         font-weight: normal;
@@ -231,7 +243,7 @@
 
 
     .contact-center{
-        width:90%;
+        width:60%;
     }
 
     .contact-wrapper{

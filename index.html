@@ -25,18 +25,108 @@
                 <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" aria-current="page" href="#about">About</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#what-we-buy">What We Buy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#guarantee-section">Guarantees</a>
+              </li>
+              <li>
                 <a class="nav-link" href="#contact">Contact</a>
-              </li>             
+              </li>
             </ul>
           </div>
         </div>
     </nav>
 
     <section id="home">
-      <div class='home-center'>
+      <div class="home-middle">
+        <h1>NEED TO SELL YOUR HOUSE?</h1>
+        <p>
+        Sell your house with Real Property Liquidators at no cost to you! We will get you the best cash offer for your home in it's current condition! For a free consultation, give us a call or complete our form today!
+      </p>
+      <button class="btn btn-success"><a href="tel:8138569458">CALL US: (813) 856 - 9458</a></button>
+      <div class="home-center">
+        <form
+        id="contact-form"
+        method="POST"
+        action="send"
+        enctype="multipart/form-data"
+      >
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <input
+                placeholder="First Name"
+                id="fName"
+                name="name"
+                type="text"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+              placeholder="Last Name"
+              id="lName"
+              name="name"
+              type="text"
+              class="form-control"
+              required
+            />
+            </div>
+          </div>
+        </div>           
+
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-6">
+              <input
+                placeholder="Email"
+                id="email"
+                type="email"
+                name="email"
+                class="form-control"
+                aria-describedby="emailHelp"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                placeholder="Phone Number"
+                id="phone-number"
+                type="text"
+                name="phone-number"
+                class="form-control"
+                required
+              />
+            </div>
+          </div>
+              <input
+                placeholder="Property Address"
+                id="address"
+                type="text"
+                name="address"
+                class="form-control"
+                required
+              />
+              <textarea
+                  placeholder="Message (Optional)"
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  rows="3"
+              >
+            </textarea>
+          <br>
+          <button type="submit" value="submit" class="btn btn-dark form-control">
+            Submit
+          </button>            
+      </form>
+    </div>
+      <!-- <div class='home-center'>
         <div class='center-left'>
           <h1>NEED TO SELL YOUR HOUSE?</h1>
           <hr>
@@ -92,7 +182,7 @@
             </div>
           </div>
         </div>   
-      </div>          
+      </div>           -->
     </section>
       
 
@@ -108,7 +198,7 @@
             At Real Property Liquidators, we pride ourselves on being ethical, honest, and genuine. 
             We are dedicated to providing a quality service not by buying your home, but by helping you sell 
             your home for cash. We are NOT your buyer! But, we will provide you with one who is fair, in your 
-            local area and ready to offer you the highest reasonable amount in cash. We are connected with a 
+            local area and ready to offer you the highest most reasonable amount in cash. We are connected with a large and 
             diverse network of real estate investors who are always looking to help you out of any situation. 
             We'll do our very best to help you in any way we can. Reach out to us today!
           </p>
@@ -118,23 +208,24 @@
     </section>
 
     <div class="as-is-wrapper">
+      <div id="what-we-buy">
         <h1>We Buy As-Is Condition!</h1>
         <hr>
       <div class="as-is">        
           <div class="as-is-conditions">
             <h5>Liquidation</h5>
             <hr>
-            <p>Houses where they are in the process of being liquidated and the owners need to sell.</p>            
+            <p>Need to pay off debts, convert assets to cash for spending, or re-allocate funds?</p>            
           </div>
           <div class="as-is-conditions">
             <h5>Distressed Condition</h5>
             <hr>
-            <p>Homes that are “run down”  “ugly” “hoarder”, not maintained, out of date.</p>
+            <p>Fire, water, storm, termite damage? Ugly house, hoarder, not maintained or need updating?</p>
           </div>
           <div class="as-is-conditions">
-            <h5>Fire/Water Damage</h5>
+            <h5>Relocation</h5>
             <hr>
-            <p>Homes that have been damaged by fire or water.</p>
+            <p>New job? Need more or less space? Looking for better school district? Changes in relationship?</p>
           </div>                
           <div class="as-is-conditions">
             <h5>Probate</h5>
@@ -144,14 +235,16 @@
           <div class="as-is-conditions">
             <h5>Pre-forclosures/Liens</h5>
             <hr>
-            <p>Sometimes  life happens. We can help provide you with the smoothest transition.</p>
+            <p>Bills are becoming difficult to pay? Divorce? Medical reasons? Lost your job?</p>
           </div>
           <div class="as-is-conditions">
             <h5>Need Cash Now!</h5>
             <hr>
-            <p>Whatever your reason to sell is, we are here to help!</p>
+            <p>Whatever your reason is to sell, R.P.L. is here to help!</p>
           </div>     
       </div>
+      </div>
+        
     </div>   
 
 
@@ -163,27 +256,24 @@
           <p>If you’re thinking, “I want to sell my home fast to someone trustworthy”, “Who will buy my house for cash” or, “how can I sell my house for cash?”, If you have a need to sell your house fast, we're here to help! </p>
           <p>Here's how it works...</p>
           <div class="c2a-steps-wrapper">
-            <div class="c2a-steps">
-              <img src="./images/Step1.png" alt="Step 1"> 
-              <h3>Step One - Contact Us</h3>
-              <p>Fill in our form with the requested information at the top or bottom of this page or call toll free at <a href="tel:8138569458">(813) 856-9458.</a> Our team will gather the information you provide to start the process. Someone will contact you shortly to get any more information that may be needed to calculate the best and highest offer that can be provided to you.</p>
+            <div class="c2a-steps">               
+              <h2><img src="./images/Step1.png" alt="Step 1">  Contact Us</h2>
+              <p>Tell us about your property, and the best way to get in touch so we can discuss your home by filling out our form or by calling us at (813) 856-9458. Our team will evaluate your property and e-mail or call you with our best purchase offer.</p>
             </div>
-            <div class="c2a-steps">
-              <img src="./images/Step2.png" alt="Step 2"> 
-              <h3>Step Two - Get A Fair Cash Offer</h3>
-              <p>We get you a fair cash offer within 24-48 hrs, FREE and with no obligation. “As-Is” cash offers will be guaranteed fair and can only be based on local comparisons. Offers are never contingent on mortgages. Our investors use their own funding so NO BANKS are necessary.</p>
+            <div class="c2a-steps">              
+              <h2><img src="./images/Step2.png" alt="Step 2">  Get A Fair Cash Offer</h2>
+              <p>We get you a fair cash offer within 24-48 hrs, free and with no obligation. If you like the offer, let us know. We prepare all the paperwork and send you the purchase agreement. We e-mail you the contract to sign, pay all the fees, set up a closing date, and take care of all the paperwork.</p>
             </div>
-            <div class="c2a-steps">
-              <img src="./images/Step3.png" alt="Step 3">  
-              <h3>Step Three - Close In Your Timeframe </h3>
-              <p>After you accept an offer, we can close typically within 14 days, but can adjust to compensate for your needs if you need more time. There will be NO Closing costs, NO realtor commissions, NO Money out of your pocket! We will make this process effortless and hassle free for you. We look forward to hearing from you today!</p>
+            <div class="c2a-steps">                
+              <h2><img src="./images/Step3.png" alt="Step 3"> Close and Cash!</h2>
+              <p>After you accept an offer, we can close as fast as 7 days, but can close on a date of your choosing if you need more time. On that date, you get paid! We look forward to hearing from you today!</p>
             </div>
           </div>
           <br>
-          <strong><p>Here’s why NOT an agent!</p></strong>
+          <strong><p>Here’s why NOT the Traditional Home Sale:</p></strong>
           <ul>
             <li>A listing agreement can lock you into a contract for 6 months. This doesn’t work when you need cash now!</li>
-            <li>Agents typically find buyers who are depending on banks or private lenders to approve their funds. This can dramatically slow up the process in getting you cash now!</li>
+            <li>AListing Agents typically find buyers who are depending on banks or private lenders to approve their funds. This can dramatically slow up the process in getting you cash now!</li>
             <li>Selling through us is Fast, Easy and saves you thousands of dollars on repairs and fees!</li>
           </ul>     
           <p>Deciding how do I sell my house? Here are the differences between selling to Real Property Liquidators verses the "traditional" route with a public MLS listing:</p>
@@ -279,82 +369,83 @@
         <!-- Grab form data to Submit form data to GoDaddy once onSubmit button is pressed -->
         <div class='contact-wrapper'>
           <form
-          id="contact-form"
-          method="POST"
-          action="send"
-          enctype="multipart/form-data"
-        >
-          <div class="form-group">
-            <div class="row">
-              <div class="col-md-6">
-                <input
-                  placeholder="First Name"
-                  id="fName"
+            id="final-offer"
+            method="POST"
+            action="send"
+            enctype="multipart/form-data"
+          >
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-6">
+                  <input
+                    placeholder="First Name"
+                    id="fName"
+                    name="name"
+                    type="text"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                  placeholder="Last Name"
+                  id="lName"
                   name="name"
                   type="text"
                   class="form-control"
                   required
                 />
+                </div>
               </div>
-              <div class="col-md-6">
-                <input
-                placeholder="Last Name"
-                id="lName"
-                name="name"
-                type="text"
-                class="form-control"
-                required
-              />
-              </div>
-            </div>
-          </div>           
+            </div>           
 
-          <div class="form-group">
-            <div class="row">
-              <div class="col-md-6">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-6">
+                  <input
+                    placeholder="Email"
+                    id="email"
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    aria-describedby="emailHelp"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    placeholder="Phone Number"
+                    id="phone-number"
+                    type="text"
+                    name="phone-number"
+                    class="form-control"
+                    required
+                  />
+                </div>
+              </div>  
+              <div class="col-md-12">              
                 <input
-                  placeholder="Email"
-                  id="email"
-                  type="email"
-                  name="email"
-                  class="form-control"
-                  aria-describedby="emailHelp"
-                  required
-                />
-              </div>
-              <div class="col-md-6">
-                <input
-                  placeholder="Phone Number"
-                  id="phone-number"
+                  placeholder="Property Address"
+                  id="address"
                   type="text"
-                  name="phone-number"
+                  name="address"
                   class="form-control"
                   required
                 />
+                <textarea
+                  placeholder="Message (Optional)"
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  rows="3"
+                ></textarea>
               </div>
-            </div>  
-            <div class="col-md-12">              
-              <input
-                placeholder="Property Address"
-                id="address"
-                type="text"
-                name="address"
-                class="form-control"
-                required
-              />
-              <textarea
-                placeholder="Message (Optional)"
-                id="message"
-                name="message"
-                class="form-control"
-                rows="3"
-              ></textarea>
-            </div>
-              <br>
-              <button type="submit" value="submit" class="btn btn-success form-control">
-                Submit
-              </button>
-          </div>
+                <br>
+                <button type="submit" value="submit" class="btn btn-success form-control">
+                  Submit
+                </button>            
+          </form>
+        </div>
       </div>      
     </section>
         

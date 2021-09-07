@@ -28,6 +28,10 @@
         text-align: center;
     }
 
+    .home-middle h1{
+        font-size: 38px;
+    }
+
     .center-left, .center-right{
         margin:0 auto;        
     }
@@ -113,26 +117,29 @@
 
     .home-contact-form #message{
         max-width:275px;
-        max-height: 250px;;
+        max-height: 250px;
     }
         
 
 
     .as-is-wrapper{
         margin:0;
-        padding:0;
+        padding:0 0 2% 0;
     }
 
     .as-is-wrapper h1{
         padding:5%;
     }
 
+
+
     .as-is div{
-        display:block;
-        width:95%;
+        /* display:block; */
+        width:45%;
         margin:5px auto;
-        border-radius: 25px;;
+        /* border-radius: 25px; */
     }
+
 
     /* ============================================================ */
     /*CALL TO ACTION SECTION */
@@ -192,8 +199,9 @@
         color:darkgreen;
     }
 
-    .c2a-steps h3{
+    .c2a-steps h2{
         font-size:medium;
+        
     }
     .c2a-center p{
         text-align: justify;
@@ -243,7 +251,7 @@
 
 
     .contact-center{
-        width:60%;
+        width:90%;
     }
 
     .contact-wrapper{

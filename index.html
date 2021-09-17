@@ -14,22 +14,19 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <img class="navbar-brand" src='images/Logo1.png'>
-          <a class="navbar-brand" href="#">Real Property Liquidators</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <img class="navbar-brand" src='images/Logo-2.png'>
+          <a class="navbar-brand" href="#" >Real Property Liquidators</a>
+          <button style="padding: 0;"class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarScroll" style="justify-content: flex-end">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"  style="--bs-scroll-height: 120px;">
+            <ul style="max-height:170px;" class="navbar-nav  my-2 my-lg-0 navbar-nav-scroll"  style="--bs-scroll-height: 120px; margin-right:1%;">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#about">About</a>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#what-we-buy">What We Buy</a>
-              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="#guarantee-section">Guarantees</a>
               </li>
@@ -54,57 +51,59 @@
         action="https://formsubmit.co/realpropertyliquidators@gmail.com"
         method="POST"
         enctype="multipart/form-data"
-      >
-        <div class="form-group">
-          <div class="row">
-            <div class="col-md-6">
-              <input
-                placeholder="First Name"
-                id="fName"
-                name="FirstName"
-                type="text"
-                class="form-control"
-                required
-              />
-            </div>
-            <div class="col-md-6">
-              <input
-              placeholder="Last Name"
-              id="lName"
-              name="LastName"
-              type="text"
-              class="form-control"
-              required
-            />
-            </div>
-          </div>
-        </div>           
+        >
 
-        <div class="form-group">
-          <div class="row">
-            <div class="col-md-6">
-              <input
-                placeholder="Email"
-                id="email"
-                type="email"
-                name="Email"
-                class="form-control"
-                aria-describedby="emailHelp"
-                required
-              />
-            </div>
-            <div class="col-md-6">
-              <input
-                placeholder="Phone Number"
-                id="phone-number"
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <input
+                  placeholder="First Name"
+                  id="fName"
+                  name="FirstName"
+                  type="text"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                placeholder="Last Name"
+                id="lName"
+                name="LastName"
                 type="text"
-                name="Phone-Number"
                 class="form-control"
                 required
               />
+              </div>
             </div>
           </div>
-        </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <input
+                  placeholder="Email"
+                  id="email"
+                  type="email"
+                  name="Email"
+                  class="form-control"
+                  aria-describedby="emailHelp"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  placeholder="Phone Number"
+                  id="phone-number"
+                  type="text"
+                  name="Phone-Number"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
           <div class="form-group">
               <input
                   placeholder="Property Address"
@@ -115,78 +114,21 @@
                   required
               />
               <textarea
-                  placeholder="HI"
+                  placeholder="Message (Optional)"
                   id="message"
                   name="Message"
                   class="form-control"
                   rows="3"
-              >
-            </textarea>
+              ></textarea>
             
             <br>
             <button type="submit" value="submit" class="btn btn-dark form-control">
               Submit
             </button>
           </div>  
-      </form>
-    </div>
-      <!-- <div class='home-center'>
-        <div class='center-left'>
-          <h1>NEED TO SELL YOUR HOUSE?</h1>
-          <hr>
-          <h4>SELL YOUR HOUSE WITH REAL PROPERTY LIQUIDATORS TODAY!</h4>
-          <P>Who will give you the best cash offer for your house! Find out why we're rated as the #1 housebuyers in the country. Give us a call today or fill out a form.</P>
-          <button class="btn btn-success"><a href="tel:4073084543">CALL US: (407) 308 - 4543</a></button>
-          <br>
-          <br>
-          <div class="home-contact-form">
-            <form
-              id="contact-form"
-              method="POST"
-              action="send"
-              enctype="multipart/form-data"
-            >
-              <div class="form-group">
-                <label for="fullName">FULL NAME<span class='required'>  *</span></label>
-                <input  class="form-control" id='fullName'  type="text" placeholder='EX. JOHN DOE' required='true'><br>
-                <br>
-                <label for="phoneNumber">PHONE NUMBER<span class='required'>  *</span></label><br>
-                <input  class="form-control" id='phoneNumber'  type="text" placeholder='EX. (123)-456-7890' required='true'><br>
-                <br>
-                <label for="propertyAddress">PROPERTY ADDRESS<span class='required'>  *</span></label><br>
-                <input class="form-control" id= 'propertyAddress' class='form-control' type="text" placeholder='EX. 3 EXAMPLE ST.' required='true'>
-              </div>
-              <br>
-              <button type="submit" value="submit" class="btn btn-dark form-control">
-                GET OUR OFFER TODAY!
-              </button>
 
-            </form>   
-          </div>   
-        </div>
-
-        <div class='center-right'>
-          <div class="test-wrapper">
-            <div class='home-tests'>
-              <h6>Sold fast, Smooth process!</h6>
-              <p>
-                "I inherited a property state's away that I honestly just didn't want to deal with. RPL helped me along the process step by step and got it sold for me in 8 days!"              
-              </p>
-              <p>-Samantha Jones</p>
-            </div>
-            <div class='home-tests'>
-              <h6>Very Professional & Caring</h6>
-              <p>"I needed to sell my house quickly and I needed help with the move. RPL offered the help I needed to get that done. I didn’t have to pay for a thing! We closed in 15 days and I got the full amount offered on the house!"</p>
-              <p>-Eddie Schmidt</p>
-            </div>
-            <div class='home-tests'>
-              <h6>RPL wants to help!</h6>
-              <p>"I couldn’t list my property with an agent bc there was just too much work needed. The people at RPL were able to get it sold in 1 week. Their expertise and professionalism were definitely worth my time. I would refer Real Property Liquidators to anyone!"</p>
-              <p>-Adam Bardell</p>
-            </div>
-          </div>
-        </div>   
-      </div>           -->
+        </form>
+      </div>
     </section>
       
 
@@ -457,14 +399,12 @@
       <div class="footer-wrapper">
 
         <div class="quick-links">
-          <h5>QUICK LINKS</h5>
+          <h5>SOCIAL MEDIA</h5>
           <hr>
-          <ul>
-            <li><a href='#home'>Home</a></li>
-            <li><a href='#about'>About</a></li>
-            <!-- <li><a href='#what-we-buy'>We Buy...</a></li> -->
-            <li><a href='#guarantee-section'>Guarantee</a></li>
-            <li><a href='#contact'>Contact</a></li>
+          <ul class="social-links"style="padding:0; font-size: medium;">
+            <li> <a href="http://www.facebook.com">Facebook</a></li>
+            <li><a href="http://www.instagram.com">Instagram</a></li>
+            <li><a href="http://www.twitter.com">Twitter</a></li>
           </ul>
         </div>
 
@@ -485,7 +425,6 @@
     </footer>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-<!--   <script src="index.js"></script> -->
 </body>
 
 </html>

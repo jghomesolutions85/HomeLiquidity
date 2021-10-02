@@ -270,6 +270,11 @@
         height:auto;
         font-size: .75em;
     }
+        
+    #contact-info{
+        margin-left: 1.5px;:   
+        margin-right: 1.5px;
+    }
 
     .contact-info{
         margin:0;
